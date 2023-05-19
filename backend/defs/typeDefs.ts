@@ -23,6 +23,8 @@ const typeDefs = gql`
     type Query{
         getAllFilms:[Film]
         findByCategory(category:String):[Film]
+        searchByTitle(title:String):[Film]
+        searchById(id:String):Film
     }
 
     type Mutation{
